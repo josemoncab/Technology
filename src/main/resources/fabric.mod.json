@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "technology",
+  "version": "${version}",
+
+  "name": "Technology Mod",
+  "description": "Technology mod based in GregTech",
+  "authors": [
+    "JoseMC"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "MIT License",
+  "icon": "assets/technology/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "dev.josemc.technology.TechnologyMod"
+    ],
+    "client": [
+      "dev.josemc.technology.TechnologyModClient"
+    ]
+  },
+  "mixins": [
+    "technology.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.9",
+    "fabric-api": "*",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
